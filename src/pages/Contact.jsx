@@ -62,7 +62,7 @@ function Contact() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 bg-white shadow-lg rounded-lg p-6">
                     {/* Left Form Section */}
                     <div className="w-full mb-6 lg:mb-0">
-                        <h2 className="text-3xl font-semibold text-gray-800 mb-6">Book Your Shoot</h2>
+                        <h2 className="text-3xl font-semibold text-gray-800 mb-6">Book Us Today</h2>
                         {formSuccess ? (
                             <div className="text-green-600 font-semibold">{message}</div>
                         ) : (
