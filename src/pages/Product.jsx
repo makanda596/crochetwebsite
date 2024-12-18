@@ -49,13 +49,13 @@ const ProductPage = () => {
 
     return (
         <section id="products" ref={productSectionRef}>
-            <div className="bg-gray-100 min-h-screen py-12 px-6">
+            <div className="bg-gray-100 min-h-screen py-1 px-6">
                 <div className="container mx-auto">
                     <h1 className="text-4xl font-bold text-gray-800 text-center mb-10">
                         Our Products
                     </h1>
                     <div className="relative">
-                        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                        <div className="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-2">
                             {products.slice(currentIndex, currentIndex + 5).map((product) => (
                                 <motion.div
                                     key={product.id}
@@ -73,12 +73,12 @@ const ProductPage = () => {
                                     />
 
                                     {/* Product Name */}
-                                    <h2 className="text-xl font-bold text-gray-800 mb-2">
+                                    <h2 className="text-sm font-bold text-gray-800 mb-2">
                                         {product.name}
                                     </h2>
 
                                     {/* Description */}
-                                    <p className="text-gray-600 text-center mb-4">
+                                    <p className="hidden text-gray-600 text-center mb-4 md:flex" >
                                         {product.description}
                                     </p>
 
@@ -93,7 +93,7 @@ const ProductPage = () => {
                                     </div>
 
                                     {/* Order Now Button */}
-                                    <button className="mt-4 bg-green-500 text-white py-2 px-6 rounded-md shadow-lg hover:bg-blue-600 transition-all duration-300 ease-in-out transform hover:scale-105">
+                                    <button className="px-2 text-sm mt-1 bg-green-500 text-white md:py-2 md:px-6 rounded-md shadow-lg hover:bg-blue-600 transition-all duration-300 ease-in-out transform hover:scale-105">
                                         <a
                                             href="https://wa.me/+254748431913"
                                             target="_blank"
