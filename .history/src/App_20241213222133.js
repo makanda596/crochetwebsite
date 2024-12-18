@@ -6,25 +6,20 @@ import Contact from './pages/Contact.jsx'
 import Location from './pages/Location.jsx'
 import Footer from './pages/Footer.jsx'
 import Home from './pages/Home.jsx'
-import SpecialOffer from './pages/SpecialOffer.jsx'
-import Services from './pages/Services.jsx'
+import SpecialOffer from './Pages/SpecialOffer'
 const App = () => {
   return (
     <div>
       <Navbar />
       <Home />
+      <SpecialOffer/>
       <Products />
-      <SpecialOffer />
-
-      <Services />
       <Testimonials />
       <Contact />
       <Location />
       <Footer />
-
     </div>
   );
 };
 
 export default App;
-
