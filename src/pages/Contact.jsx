@@ -44,7 +44,7 @@ function Contact() {
 
             const json = await res.json();
             if (json.success) {
-                setMessage("Your booking request has been sent successfully.");
+                setMessage("Your message has been sent successfully.");
                 setFormSuccess(true);
             } else {
                 setMessage("There was a problem sending your request.");
